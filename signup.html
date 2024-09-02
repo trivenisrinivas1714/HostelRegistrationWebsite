@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <div class="left-section">
+                <h2 style="padding-bottom: 5px;">Sign Up</h2>
+                <form method="post" action="./SignupServlet">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Your Username" name="name" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+            <div class="right-section">
+                <img src="signup.jpg" alt="Sign Up Image">
+                <p><a href="login.html">I am already a member</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

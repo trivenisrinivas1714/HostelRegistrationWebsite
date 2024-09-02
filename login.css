@@ -1,0 +1,190 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 70%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.login-box {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.left-section {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-section {
+    padding: 40px 40px 40px 40px;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-field i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.checkbox-field label {
+    font-size: 14px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 30px 0 0 0;
+    text-align: left;
+}
+
+.right-section form {
+    text-align: left;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-field input {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.left-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    margin: 0;
+}
+
+.left-section a {
+    color: #000000;
+    text-decoration: underline;
+    font-size: medium;
+}
+
+.left-section a:hover {
+    text-decoration: underline;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .login-box {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left-section {
+        order: 1;
+    }
+    
+    .right-section {
+        order: 2;
+        padding: 40px 20px;
+    }
+
+    h2 {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .input-field input::placeholder {
+        font-size: 12px;
+    }
+
+    .input-field {
+        margin-bottom: 30px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    .or-divider {
+        margin: 20px 0;
+    }
+
+    .social-buttons {
+        margin-top: 10px;
+    }
+}
